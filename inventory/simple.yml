@@ -6,7 +6,7 @@
 ## This is on multiple KVM hosts, see kvmhost.yml
 simple:
   hosts:
-    simple-centos-8-4:
+    simple-centos-8-1:
   vars:
     ansible_python_interpreter: /usr/libexec/platform-python
     #virt_infra_user: ocpadmin

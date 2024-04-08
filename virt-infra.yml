@@ -1,4 +1,5 @@
 - hosts: all
   gather_facts: no
+  remote_user: user
   roles:
     - ansible-role-virt-infra 
