@@ -2,4 +2,8 @@
   gather_facts: no
   remote_user: user
   roles:
+<<<<<<< HEAD
     - ansible-role-virt-infra
+=======
+    - ansible-role-virt-infra
+>>>>>>> refs/remotes/origin/master
