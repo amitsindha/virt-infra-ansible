@@ -6,7 +6,7 @@
 # Overriding some defaults at hostgroup and individual guest levels
 # Note that the virt_infra_variant are not set to specific versions,
 # this is to make it work on different hosts
-# Note also that CentOS 8 needs the path to system Python
+# Note also that CentOS 8 needs the path to system Python - test
 example:
   hosts:
     example-centos-7:
