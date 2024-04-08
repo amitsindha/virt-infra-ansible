@@ -9,17 +9,17 @@
 kvmhost:
   hosts:
     ## Put your KVM host connection and settings here
-    localhost:
-      ansible_connection: local
+    #localhost:
+    #  ansible_connection: local
     ## We are emulating multiple KVM hosts here, defaults to localhost
     ## Update them to use real hostnames, or
     ## change ansible_connection to ansible_host with an IP
     kvmhost1:
-      ansible_connection: local
-    kvmhost2:
-      ansible_connection: local
-    kvmhost3:
-      ansible_connection: local
+      ansible_host: 192.168.0.212
+    #kvmhost2:
+      #ansible_host: 192.168.122.63
+    #kvmhost3:
+      #ansible_host: 192.168.122.88
   vars:
     ansible_python_interpreter: /usr/bin/python3
     # Networks are a list, you can add more than one
