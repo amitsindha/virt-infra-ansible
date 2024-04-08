@@ -1,0 +1,22 @@
+---
+## YAML based inventory, see:
+## https://docs.ansible.com/ansible/latest/plugins/inventory/yaml.html
+#
+## Simple example using defaults to spin up 3 CentOS guests
+## This is on multiple KVM hosts, see kvmhost.yml
+simple:
+  hosts:
+    simple-centos-8-4:
+  vars:
+    ansible_python_interpreter: /usr/libexec/platform-python
+    #virt_infra_user: ocpadmin
+    #virt_infra_password: Server@12
+    virt_infra_state: running
+    virt_infra_variant: centos7.0
+    virt_infra_distro_image: "CentOS-8-GenericCloud-8.3.2011-20201204.2.x86_64.qcow2"
+    virt_infra_distro_image_url: "https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.3.2011-20201204.2.x86_64.qcow2"
+    virt_infra_distro_image_checksum_url: "https://cloud.centos.org/centos/8/x86_64/images/CHECKSUM"
+    ansible_python_interpreter: /usr/libexec/platform-python
+    virt_infra_disk_cmd:
+      - echo 'fastestmirror=1' >> /etc/dnf/dnf.conf
+    virt_infra_guest_deps:
